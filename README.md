@@ -21,7 +21,7 @@ The following figure is the FSM of the whole system. The inside controllers of F
 ## Membranes Potential
 ![timestep](https://github.com/hsieh672/SNN-Accelerator/blob/main/image/timestep.jpg) 
   
-The total timesteps I chose is 35. First, divide the timesteps into 0 and 1-34. In the software simulation, in the first layer, Vth = 68 in the second layer, Vth = 91. I use the following formula to calculate mem:
+The total timesteps I chose is 35. First, divide the timesteps into 0 and 1-34. In the software simulation, in the first layer, Vth = 68. In the second layer, Vth = 91. I use the following formula to calculate mem:
 ![timestep0](https://github.com/hsieh672/SNN-Accelerator/blob/main/image/timestep0.jpg)  
   
 In timestep 1 to 34, I need to use the membranes after resetting from the previous timestep. So, in timestep 0, I first output and record the reset membranes in the top module. When I reach timestep 1, I then input these values.
